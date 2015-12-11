@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="jquery.mobile/jquery.mobile-1.4.5.css">
+		<link rel="stylesheet" type="text/css" href="jquery.mobile/icon-pack-custom.css">
+		<SCRIPT TYPE="text/javascript" src="js/main.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="jquery.mobile/jquery-1.7.2.min"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="jquery.mobile/jquery.mobile-1.4.5.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="js/phonegap-1.4.1.js"></SCRIPT>
+		<SCRIPT TYPE="text/javascript" src="js/jquery-2.0.3.js"></SCRIPT>
+        <script type="text/javascript" src="js/index.js"></script>
+			<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </head>
+ <body onload="init();">
+ 
+ <!------------Pagina Principal--------->
+	<div data-role="page" id="principal" data-title="Principal">
+			
+			<div  data-role="panel" data-display="overlay" data-position="left" id="panel1">
+				<div data-role="header" class="ui-b" data-theme="b"> <h1 >Menu</h1> </div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a href="#" data-rel="close"> Inicio</a></li>
+						<li> <a onclick="noticias('3')" data-transition='flip' href="#todas"  > Locales</a></li>
+						<li> <a onclick="noticias('4')" data-transition='flip' href="#todas"> Nacionales</a></li>
+						<li> <a onclick="noticias('5')" data-transition='flip' href="#todas"> Internacionales</a></li>
+						<li> <a onclick="noticias('6')" data-transition='flip' href="#todas"> Deporte </a></li>
+						<li> <a onclick="noticias('7')"  data-transition='flip' href="#todas"> Sociedad</a></li>
+						<li> <a onclick="noticias('8')"  data-transition='flip' href="#todas"> Far&aacutendula </a></li>
+						<li> <a href="#c"  data-transition='flip' > Clasificados</a></li>
+						<li> <a href="#contacto"  data-transition='flip' > Contacto</a></li>
+					</ul>
+					<a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+				</div>
+				<div data-role="footer" class="ui-f" data-theme="f">
+				</div>
+			</div>
+			<div data-role="header"  data-id="fijo" data-position="fixed" class="ui-b" data-theme="b">
+				<h1><img src="img/logo-min.png"/></h1>
+				<a href="#panel1" id="butonham" data-role="button" data-icon="bars" data-icompos="no-text" data-theme="b"></a>
+				<a id="radio" onclick="radio()" class="ui-btn-right ui-btn ui-icon-volume-off ui-btn-icon-notext ui-corner-all">Audio Icon</a>
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+			<center><img id="cargando"  src="img/load.gif" ></center>
+				<div id="primera"></div>
+				<div id="secundarias" ></div>
+				<div id="ListaL"></div>
+				<div id="videos" style="    margin: 10px;">		</div>
+				<div id="ListaL2"></div>
+				<div id="audios">		</div>
+				<div id="ListaN"></div>
+				<div id="ListaInternacionales"></div>
+				<div id="ListaDeporte"></div>
+				<div id="ListaSociedad"></div>
+				<div id="ListaFarandula"></div>
+			</div>
+			<div data-role="footer" >
+				<center>www.fenix951.com.ar</center>
+			</div>
+			
+	</div>
+ <!------------Pagina Noticia Indivudual--------->
+	<div data-role="page"   id="noticia1">
+	
+			<div data-role="panel" data-display="overlay" data-position="left" id="panel2">
+				<div data-role="header" class="ui-b" data-theme="b"> <h1 >Menu</h1> </div>
+				<div data-role="content">
+					<ul data-role="listview" style="margin:0px"> 
+						<li> <a href="index.html" > Inicio</a></li>
+						<li> <a onclick="noticias('3')" data-transition='flip' href="#todas"> Locales</a></li>
+						<li> <a onclick="noticias('4')" data-transition='flip'  href="#todas"> Nacionales</a></li>
+						<li> <a onclick="noticias('5')" data-transition='flip'  href="#todas"> Internacionales</a></li>
+						<li> <a onclick="noticias('6')" data-transition='flip' href="#todas"> Deporte </a></li>
+						<li> <a onclick="noticias('7')" data-transition='flip' href="#todas"> Sociedad</a></li>
+						<li> <a onclick="noticias('8')"  data-transition='flip' href="#todas"> Far&aacutendula </a></li>
+						<li> <a href="#c"  data-transition='flip' > Clasificados</a></li>
+						<li> <a href="#contacto"  data-transition='flip' > Contacto</a></li>
+					</ul>
+					<a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+				</div>
+				<div data-role="footer" class="ui-f" data-theme="f">
+				</div>
+			</div>
+			<div data-role="header" data-position="fixed" class="ui-b" data-theme="b">
+				<h1>Fenix951</h1>
+				<a href="#panel2" id="butonham" data-role="button" data-icon="bars" data-icompos="no-text" data-theme="b"></a>
+				<a href="#" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content" class="ui-fondo" data-theme="fondo">
+				<center><img id="cargando2" class="cargando"  src="img/load.gif" ></center>
+				<div id="noticia"></div>
+			</div>
+			<div data-role="footer" >
+				<div data-role="navbar" id="iconos">
+					
+				</div>
+			</div>
+	</div>
+	
+	 <!------------Pagina Seccion Noticias--------->
+	<div data-role="page" id="todas">
+	
+			<div data-role="panel" data-display="overlay" data-position="left" id="panel3">
+				<div data-role="header" class="ui-b" data-theme="b"> <h1 >Menu</h1> </div>
+				<div data-role="content">
+				<ul data-role="listview" style="margin:0px"> 
+						<li> <a href="index.html" > Inicio</a></li>
+						<li> <a onclick="noticias('3')" data-transition='flip'  href="#todas"> Locales</a></li>
+						<li> <a onclick="noticias('4')" data-transition='flip' href="#todas"> Nacionales</a></li>
+						<li> <a onclick="noticias('5')" data-transition='flip' href="#todas"> Internacionales</a></li>
+						<li> <a onclick="noticias('6')" data-transition='flip' href="#todas"> Deporte </a></li>
+						<li> <a onclick="noticias('7')" data-transition='flip' href="#todas"> Sociedad</a></li>
+						<li> <a onclick="noticias('8')"  data-transition='flip' href="#todas"> Far&aacutendula </a></li>
+						<li> <a href="#c"  data-transition='flip' > Clasificados</a></li>
+						<li> <a href="#contacto"  data-transition='flip' > Contacto</a></li>
+					</ul>
+				<a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+				</div>
+				<div data-role="footer" class="ui-f" data-theme="f">
+				</div>
+			</div>
+			<div data-role="header" data-position="fixed" class="ui-b" data-theme="b">
+				<h1>Fenix951</h1>
+				<a href="#panel3"  id="butonham" data-role="button" data-icon="bars" data-icompos="no-text" data-theme="b"></a>
+				<a href="#" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content" class="ui-fondo"  data-theme="fondo">
+			<form class="ui-filterable">
+			<input id="filtronoticia" data-type="search"></form>
+			<ul data-role="listview" data-filter="true" data-input="#filtronoticia"		data-inset="true"	id="noticias"> </div>
+			<center><img id="cargando1" class="cargando" src="img/load.gif" ></center>
+			</div>
+			<div data-role="footer" >
+				
+			</div>
+	</div>
+	 <!------------Pagina Seleccion de clasificados--------->
+	<div data-role="page" id="c">
+			
+			
+			<div data-role="header" data-position="fixed" class="ui-b" data-theme="b">
+				<h1>Fenix951</h1>
+				
+				<a href="#" class="ui-btn-right" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content" class="ui-fondo"  data-theme="fondo">	
+				<legend>Seleccione el clasificado que desea visualizar</legend>
+				<ul data-role="listview" style="margin:0px"> 	
+						<li> <a onclick="clasificados('1')" data-transition='flip'  href="#clasificados">Autos</a></li>
+						<li> <a onclick="clasificados('2')" data-transition='flip'  href="#clasificados">Motos</a></li>
+						<li> <a onclick="clasificados('3')" data-transition='flip'  href="#clasificados">Inmuebles</a></li>
+						<li> <a onclick="clasificados('4')" data-transition='flip'  href="#clasificados">Servicios y Empleos</a></li>
+						<li> <a onclick="clasificados('5')" data-transition='flip'  href="#clasificados">Tecnolog&iacutea </a></li>
+						<li> <a onclick="clasificados('6')" data-transition='flip'  href="#clasificados">Varios </a></li>
+					
+				</ul>
+			</div>
+			<div data-role="footer" >	
+			</div>
+	</div>
+	<!------------Pagina Listado de clasificados--------->
+	<div data-role="page" id="clasificados">
+			
+			<div data-role="header" data-position="fixed" class="ui-b" data-theme="b">
+				<h1>Fenix951</h1>
+				
+				<a href="#" class="ui-btn-right" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content" id="clasi" class="ui-fondo"  data-theme="fondo">
+			
+			</div>
+			
+			<div data-role="footer" >
+				
+			</div>
+	</div>
+	
+	
+	 <!------------Pagina Contacto--------->
+	<div data-role="page" id="contacto">
+			
+			<div data-role="header" data-position="fixed" class="ui-b" data-theme="b">
+				<h1>Fenix951</h1>
+				
+				<a href="#" class="ui-btn-right" data-role="button" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+			</div>
+			<div data-role="content" class="ui-fondo"  data-theme="fondo">
+				<div data-role="fieldcontain">
+					<div id="alertaco"> </div>
+				   <input name="" id="nombre" placeholder="Ingrese su Nombre" value=""
+					  type="text" data-mini="true"><br>
+				   <textarea name="" id="mensaje" placeholder="Su mensaje" data-mini="false"></textarea>
+				   <br>
+				   <input id="btnDefaultSMS"  onclick="enviarcorreo()" type="submit" data-theme="e"
+					  value="Enviar" data-mini="false">
+				</div>
+			</div>
+			<div data-role="footer" >
+			</div>
+	</div>
+	
+  </body>
+
+</html>

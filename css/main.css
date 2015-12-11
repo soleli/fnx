@@ -1,0 +1,88 @@
+.ui-bar-b{      
+background: rgba(237,207,14,1);
+background: -moz-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,207,14,1)), color-stop(53%, rgba(241,231,103,1)), color-stop(100%, rgba(237,207,14,1)));
+background: -webkit-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -o-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -ms-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: linear-gradient(to right, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf0e', endColorstr='#edcf0e', GradientType=1 );
+	color:black !important;}		
+a {    text-decoration: none;
+    color: black !important;
+}
+#primera{display:table;  font-size: 18px;     width: 100%;}
+.copetep{
+ 
+    text-align: center;
+    background-color: rgba(39, 39, 35, 0.57);
+    color: rgb(255, 255, 255);
+    margin-top: -70px;
+    position: relative;
+    text-shadow: 0px 0px 0px;
+	height: 70px;
+  
+}
+.copeteprimera{
+   background-color: rgba(39, 39, 35, 0.57);
+    color: rgb(255, 255, 255);
+  text-align:center;
+  margin-top:-2%;
+    position: relative;
+    text-shadow: 0px 0px 0px;
+  
+}
+#secundarias{ display: table;  font-size: 14px;}
+
+.notisegunda{width: 48%;
+    float: left;
+    padding: 1%; }
+.titucategoria{
+   
+background: rgba(237,207,14,1);
+background: -moz-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,207,14,1)), color-stop(53%, rgba(241,231,103,1)), color-stop(100%, rgba(237,207,14,1)));
+background: -webkit-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -o-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -ms-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: linear-gradient(to right, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf0e', endColorstr='#edcf0e', GradientType=1 );
+    color: black;
+    font-size: 20px;
+      padding: 2%;
+    text-align: center;
+    margin-top: 4%;
+	    border: 1px rgba(237,207,14,1) solid}
+		
+.tituseccion{
+   
+background: rgba(237,207,14,1);
+background: -moz-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,207,14,1)), color-stop(53%, rgba(241,231,103,1)), color-stop(100%, rgba(237,207,14,1)));
+background: -webkit-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -o-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+background: -ms-linear-gradient(left, rgba(237,207,14,1) 0%, rgba(241,231,103,1) 53%, rgba(237,207,14,1) 100%);
+    background: linear-gradient(to right, rgba(237,207,14,1) 0%, rgb(0, 0, 0) 53%, rgba(237,207,14,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcf0e', endColorstr='#edcf0e', GradientType=1 );
+    color: #EDCF0E;
+    font-size: 23px;
+     
+    text-align: center;
+    margin-top: 0%;
+	    border: 1px rgba(237,207,14,1) solid}
+		
+		
+		
+.imgcate{float: left;padding-left: 1%; margin-right: 10px; width:30%;}
+#butonham{  padding: 1.3em 1.3em !important;}
+
+.imgred{    float: left;
+    width: 30%;
+	    margin-left: 3%;}
+	#cargando{position: absolute; top:50%; margin-top:-50px;}
+	.cargando{position: absolute; top:50%; margin-top:-50px;}
+	
+.text1{    text-align: center;
+    font-weight: 700;}
+
+.imgpeque{width:20%}
